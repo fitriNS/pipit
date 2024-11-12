@@ -70,7 +70,7 @@ body{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: var(--txt-color);
   text-align: center;
-  font-size: 7px;
+  font-size: 6px;
 }
 .heart {
   position: absolute;
@@ -114,3 +114,51 @@ body{
   transform: rotate(90deg);
   transition-delay: 0.4s;
 }
+/* Media query untuk tampilan mobile */
+/* Media query untuk tampilan iPhone */
+@media (max-width: 414px) {
+  .envelope-wrapper > .envelope {
+    width: 220px;
+    height: 160px;
+  }
+
+  .envelope-wrapper > .envelope::before,
+  .envelope-wrapper > .envelope::after {
+    border-top-width: 80px;
+    border-right-width: 110px;
+    border-left-width: 110px;
+    border-bottom-width: 60px;
+  }
+
+  .envelope > .letter {
+    right: 5%;
+    width: 90%;
+    height: 75%;
+    padding: 12px 8px;
+  }
+
+  .envelope > .letter > .text {
+    font-size: 5px;
+  }
+
+  .heart {
+    width: 10px;
+    height: 10px;
+    top: 45%;
+    left: 50%;
+  }
+  
+  .heart:before, 
+  .heart:after {
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Adjust container padding to fit within the screen */
+  .container {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+
