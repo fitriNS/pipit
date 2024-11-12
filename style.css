@@ -115,50 +115,47 @@ body{
   transition-delay: 0.4s;
 }
 /* Media query untuk tampilan mobile */
-/* Media query untuk tampilan iPhone */
-@media (max-width: 414px) {
+@media (max-width: 600px) {
   .envelope-wrapper > .envelope {
-    width: 220px;
-    height: 160px;
+    width: 200px;
+    height: 150px;
   }
 
   .envelope-wrapper > .envelope::before,
   .envelope-wrapper > .envelope::after {
-    border-top-width: 80px;
-    border-right-width: 110px;
-    border-left-width: 110px;
-    border-bottom-width: 60px;
+    border-top-width: 90px;
+    border-right-width: 100px;
+    border-left-width: 100px;
+    border-bottom-width: 70px;
   }
 
   .envelope > .letter {
-    right: 5%;
-    width: 90%;
-    height: 75%;
-    padding: 12px 8px;
+    right: 10%;
+    width: 80%;
+    height: 70%;
+    padding: 15px 8px;
   }
 
   .envelope > .letter > .text {
-    font-size: 5px;
+    font-size: 4px;
   }
 
   .heart {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     top: 45%;
     left: 50%;
   }
-  
   .heart:before, 
   .heart:after {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
 
-  /* Adjust container padding to fit within the screen */
+  /* Adjust the .container to make it fit mobile screens better */
   .container {
     height: auto;
-    padding: 10px;
+    padding: 20px;
   }
 }
-
 
